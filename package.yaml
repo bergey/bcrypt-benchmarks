@@ -7,6 +7,17 @@ dependencies:
   - bytestring
   - criterion
   - cryptonite
+
+tests:
+  bcrypt-equivalent:
+    source-dirs: equivalent
+    main: Properties.hs
+    dependencies:
+      - hedgehog
+      - tasty
+      - tasty-hedgehog
+      - tasty-hunit
+      - text
   
 benchmarks:
   bcrypt-benchmark:
