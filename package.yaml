@@ -1,0 +1,14 @@
+name: bcrypt-benchmarks
+version: 0.1
+
+dependencies:
+  - base
+  - bcrypt
+  - bytestring
+  - criterion
+  - cryptonite
+  
+benchmarks:
+  bcrypt-benchmark:
+    source-dirs: ./.
+    main: Bench.hs
